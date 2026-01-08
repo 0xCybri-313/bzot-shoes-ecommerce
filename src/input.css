@@ -1,0 +1,17 @@
+@import "tailwindcss";
+
+/* Custom CSS */
+
+.aside-hover {
+  background-color: #00adef !important;
+  color: white !important;
+  font-weight: 700 !important;
+  fill: white !important;
+}
+
+.input-on-error {
+  box-shadow:
+    inset 3px 3px 6px #ffb8c4,
+    inset -3px -3px 6px #ffffff,
+    0 0 0 1px #ff3b5c;
+}

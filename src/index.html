@@ -1,0 +1,346 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bzot</title>
+    <link rel="stylesheet" href="../dist/output.css" />
+  </head>
+  <body>
+    <div id="root">
+      <!-- layout -->
+      <div
+        id="layout"
+        class="grid h-screen w-screen grid-cols-[256px_1fr] grid-rows-[128px_1fr]"
+      >
+        <!-- header -->
+        <header class="bg-[#252525]">
+          <div
+            id="logo"
+            class="flex h-full w-full items-center justify-center text-2xl font-bold text-white"
+          >
+            <a
+              href="./index.html"
+              class="relative flex flex-col items-center justify-center"
+            >
+              <img
+                class="h-20 w-20"
+                src="../assets/logos/bzot-logo-white.png"
+                alt="BZOT Logo"
+                srcset=""
+              />
+              <p class="absolute bottom-0 self-center text-[#3871c1]">
+                BZOT
+              </p></a
+            >
+          </div>
+        </header>
+        <!-- nav-bar section -->
+        <nav
+          class="flex h-full w-full items-center justify-between bg-linear-to-l from-[#3871c1] to-[#00adef] px-8"
+        >
+          <!-- welcome-section -->
+          <div class="">
+            <p class="text-2xl font-bold text-white">
+              Welcome to BZOT, User Name
+            </p>
+            <p class="text-base text-white">
+              Introducing new Football Shoes, Check them out, 49% off
+            </p>
+          </div>
+          <!-- search-section -->
+          <div class="">
+            <search class="flex items-center justify-center gap-2">
+              <input
+                id="search"
+                type="text"
+                class="h-9 rounded-full bg-white px-4 pb-px placeholder:text-gray-400"
+                placeholder="Search"
+              />
+              <button
+                class="flex h-9 w-9 items-center justify-center rounded-full border-2 border-white bg-white bg-linear-to-l from-[#3871c1] to-[#00adef] fill-white"
+              >
+                <svg
+                  class="h-5 w-5"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 -960 960 960"
+                >
+                  <path
+                    d="M784-120 532-372q-30 24-69 38t-83 14q-109 0-184.5-75.5T120-580q0-109 75.5-184.5T380-840q109 0 184.5 75.5T640-580q0 44-14 83t-38 69l252 252-56 56ZM380-400q75 0 127.5-52.5T560-580q0-75-52.5-127.5T380-760q-75 0-127.5 52.5T200-580q0 75 52.5 127.5T380-400Z"
+                  />
+                </svg>
+              </button>
+            </search>
+          </div>
+          <!-- profile-section -->
+          <div class="flex items-center justify-center gap-2">
+            <div id="profile-text" class="text-lg font-bold text-white">
+              User Name
+            </div>
+            <div
+              id="profile-picture"
+              class="flex h-12 w-12 items-center justify-center overflow-hidden rounded-full bg-white"
+            ></div>
+          </div>
+        </nav>
+        <!-- side-bar section -->
+        <aside class="bg-[#252525]">
+          <div
+            class="left-side flex h-full w-full flex-col items-center justify-between"
+          >
+            <!-- top-section -->
+            <div
+              class="upper-section flex w-full flex-col items-center justify-center"
+            >
+              <!-- dashboard -->
+              <div
+                class="flex h-12 w-full items-center justify-center fill-[#8A8A8A] font-bold text-[#8A8A8A]"
+              >
+                <a
+                  id="dashboard"
+                  href="#dashboard"
+                  data-url="dashboard.html"
+                  class="side-bar-options flex h-12 w-full items-center justify-center gap-4"
+                >
+                  <div class="flex h-12 w-32 items-center gap-4">
+                    <span
+                      ><svg
+                        class="h-5 w-5"
+                        viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          d="M10,14 C10.5522847,14 11,14.4477153 11,15 L11,21 C11,21.5522847 10.5522847,22 10,22 L3,22 C2.44771525,22 2,21.5522847 2,21 L2,15 C2,14.4477153 2.44771525,14 3,14 L10,14 Z M21,9 C21.5522847,9 22,9.44771525 22,10 L22,21 C22,21.5522847 21.5522847,22 21,22 L14,22 C13.4477153,22 13,21.5522847 13,21 L13,10 C13,9.44771525 13.4477153,9 14,9 L21,9 Z M10,2 C10.5522847,2 11,2.44771525 11,3 L11,11 C11,11.5522847 10.5522847,12 10,12 L3,12 C2.44771525,12 2,11.5522847 2,11 L2,3 C2,2.44771525 2.44771525,2 3,2 L10,2 Z M21,2 C21.5522847,2 22,2.44771525 22,3 L22,6 C22,6.55228475 21.5522847,7 21,7 L14,7 C13.4477153,7 13,6.55228475 13,6 L13,3 C13,2.44771525 13.4477153,2 14,2 L21,2 Z"
+                        /></svg></span
+                    ><span>Dashboard</span>
+                  </div></a
+                >
+              </div>
+              <!-- shop -->
+              <div
+                class="flex h-12 w-full items-center justify-center fill-[#8A8A8A] font-bold text-[#8A8A8A]"
+              >
+                <a
+                  id="shop"
+                  href="#shop"
+                  data-url="shop.html"
+                  class="side-bar-options flex h-12 w-full items-center justify-center gap-4"
+                >
+                  <div class="flex h-12 w-32 items-center gap-4">
+                    <span
+                      ><svg
+                        class="h-5 w-5"
+                        viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M22,5H2A1,1,0,0,0,1,6v4a3,3,0,0,0,2,2.82V22a1,1,0,0,0,1,1H20a1,1,0,0,0,1-1V12.82A3,3,0,0,0,23,10V6A1,1,0,0,0,22,5ZM15,7h2v3a1,1,0,0,1-2,0ZM11,7h2v3a1,1,0,0,1-2,0ZM7,7H9v3a1,1,0,0,1-2,0ZM4,11a1,1,0,0,1-1-1V7H5v3A1,1,0,0,1,4,11ZM14,21H10V19a2,2,0,0,1,4,0Zm5,0H16V19a4,4,0,0,0-8,0v2H5V12.82a3.17,3.17,0,0,0,1-.6,3,3,0,0,0,4,0,3,3,0,0,0,4,0,3,3,0,0,0,4,0,3.17,3.17,0,0,0,1,.6Zm2-11a1,1,0,0,1-2,0V7h2ZM4.3,3H20a1,1,0,0,0,0-2H4.3a1,1,0,0,0,0,2Z"
+                        /></svg></span
+                    ><span>Shop</span>
+                  </div></a
+                >
+              </div>
+              <!-- orders -->
+              <div
+                class="flex h-12 w-full items-center justify-center fill-[#8A8A8A] font-bold text-[#8A8A8A]"
+              >
+                <a
+                  id="orders"
+                  href="#orders"
+                  data-url="orders.html"
+                  class="side-bar-options flex h-12 w-full items-center justify-center gap-4"
+                >
+                  <div class="flex h-12 w-32 items-center gap-4">
+                    <span
+                      ><svg
+                        class="h-5 w-5"
+                        version="1.1"
+                        id="Capa_1"
+                        xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink"
+                        x="0px"
+                        y="0px"
+                        viewBox="0 0 503.379 503.379"
+                        style="enable-background: new 0 0 503.379 503.379"
+                        xml:space="preserve"
+                      >
+                        <g>
+                          <path
+                            d="M458.091,128.116v326.842c0,26.698-21.723,48.421-48.422,48.421h-220.92c-26.699,0-48.421-21.723-48.421-48.421V242.439
+		c6.907,1.149,13.953,1.894,21.184,1.894c5.128,0,10.161-0.381,15.132-0.969v211.594c0,6.673,5.429,12.104,12.105,12.104h220.92
+		c6.674,0,12.105-5.432,12.105-12.104V128.116c0-6.676-5.432-12.105-12.105-12.105H289.835c0-12.625-1.897-24.793-5.297-36.315
+		h125.131C436.368,79.695,458.091,101.417,458.091,128.116z M159.49,228.401c-62.973,0-114.202-51.229-114.202-114.199
+		C45.289,51.229,96.517,0,159.49,0c62.971,0,114.202,51.229,114.202,114.202C273.692,177.172,222.461,228.401,159.49,228.401z
+		 M159.49,204.19c49.618,0,89.989-40.364,89.989-89.988c0-49.627-40.365-89.991-89.989-89.991
+		c-49.626,0-89.991,40.364-89.991,89.991C69.499,163.826,109.87,204.19,159.49,204.19z M227.981,126.308
+		c6.682,0,12.105-5.423,12.105-12.105s-5.423-12.105-12.105-12.105h-56.386v-47.52c0-6.682-5.423-12.105-12.105-12.105
+		s-12.105,5.423-12.105,12.105v59.625c0,6.682,5.423,12.105,12.105,12.105H227.981z M367.697,224.456h-131.14
+		c-6.682,0-12.105,5.423-12.105,12.105c0,6.683,5.423,12.105,12.105,12.105h131.14c6.685,0,12.105-5.423,12.105-12.105
+		C379.803,229.879,374.382,224.456,367.697,224.456z M367.91,297.885h-131.14c-6.682,0-12.105,5.42-12.105,12.105
+		s5.423,12.105,12.105,12.105h131.14c6.685,0,12.104-5.42,12.104-12.105S374.601,297.885,367.91,297.885z M367.91,374.353h-131.14
+		c-6.682,0-12.105,5.426-12.105,12.105c0,6.685,5.423,12.104,12.105,12.104h131.14c6.685,0,12.104-5.42,12.104-12.104
+		C380.015,379.778,374.601,374.353,367.91,374.353z"
+                          />
+                        </g></svg></span
+                    ><span>Orders</span>
+                  </div></a
+                >
+              </div>
+              <!-- transactions -->
+              <div
+                class="flex h-12 w-full items-center justify-center fill-[#8A8A8A] font-bold text-[#8A8A8A]"
+              >
+                <a
+                  id="transactions"
+                  href="#transactions"
+                  data-url="transactions.html"
+                  class="side-bar-options flex h-12 w-full items-center justify-center gap-4"
+                >
+                  <div class="flex h-12 w-32 items-center gap-4">
+                    <span
+                      ><svg
+                        class="h-5 w-5"
+                        viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M17.0020048,13 C17.5542895,13 18.0020048,13.4477153 18.0020048,14 C18.0020048,14.5128358 17.6159646,14.9355072 17.1186259,14.9932723 L17.0020048,15 L5.41700475,15 L8.70911154,18.2928932 C9.0695955,18.6533772 9.09732503,19.2206082 8.79230014,19.6128994 L8.70911154,19.7071068 C8.34862757,20.0675907 7.78139652,20.0953203 7.38910531,19.7902954 L7.29489797,19.7071068 L2.29489797,14.7071068 C1.69232289,14.1045317 2.07433707,13.0928192 2.88837381,13.0059833 L3.00200475,13 L17.0020048,13 Z M16.6128994,4.20970461 L16.7071068,4.29289322 L21.7071068,9.29289322 C22.3096819,9.8954683 21.9276677,10.9071808 21.1136309,10.9940167 L21,11 L7,11 C6.44771525,11 6,10.5522847 6,10 C6,9.48716416 6.38604019,9.06449284 6.88337887,9.00672773 L7,9 L18.585,9 L15.2928932,5.70710678 C14.9324093,5.34662282 14.9046797,4.77939176 15.2097046,4.38710056 L15.2928932,4.29289322 C15.6533772,3.93240926 16.2206082,3.90467972 16.6128994,4.20970461 Z"
+                        /></svg></span
+                    ><span>Transactions</span>
+                  </div></a
+                >
+              </div>
+              <!-- profile -->
+              <div
+                class="flex h-12 w-full items-center justify-center fill-[#8A8A8A] font-bold text-[#8A8A8A]"
+              >
+                <a
+                  id="profile"
+                  href="#profile"
+                  data-url="profile.html"
+                  class="side-bar-options flex h-12 w-full items-center justify-center gap-4"
+                >
+                  <div class="flex h-12 w-32 items-center gap-4">
+                    <span
+                      ><svg
+                        class="h-5 w-5"
+                        viewBox="0 0 48 48"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path d="M0 0h48v48H0z" fill="none" />
+                        <g id="Shopicon">
+                          <path
+                            d="M33.843,26.914L24,36l-9.843-9.086C8.674,30.421,5,36.749,5,44h38C43,36.749,39.326,30.421,33.843,26.914z"
+                          />
+                          <path
+                            d="M24,28c3.55,0,6.729-1.55,8.926-4C34.831,21.876,36,19.078,36,16c0-6.627-5.373-12-12-12S12,9.373,12,16
+		c0,3.078,1.169,5.876,3.074,8C17.271,26.45,20.45,28,24,28z"
+                          />
+                        </g></svg></span
+                    ><span>Profile</span>
+                  </div></a
+                >
+              </div>
+            </div>
+            <div
+              class="lower-section mb-4 flex w-full flex-col items-center justify-center"
+            >
+              <!-- help -->
+              <div
+                class="flex h-12 w-full items-center justify-center fill-[#8A8A8A] font-bold text-[#8A8A8A]"
+              >
+                <a
+                  id="help"
+                  href="#help"
+                  data-url="help.html"
+                  class="side-bar-options flex h-12 w-full items-center justify-center gap-4"
+                >
+                  <div class="flex h-12 w-32 items-center gap-4">
+                    <span
+                      ><svg
+                        class="h-5 w-5"
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 24 24"
+                      >
+                        <path
+                          d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 17h-2v-2h2v2zm2.07-7.75l-.9.92C13.45 12.9 13 13.5 13 15h-2v-.5c0-1.1.45-2.1 1.17-2.83l1.24-1.26c.37-.36.59-.86.59-1.41 0-1.1-.9-2-2-2s-2 .9-2 2H8c0-2.21 1.79-4 4-4s4 1.79 4 4c0 .88-.36 1.68-.93 2.25z"
+                        /></svg></span
+                    ><span>Help</span>
+                  </div></a
+                >
+              </div>
+              <!-- logout -->
+              <div
+                class="flex h-12 w-full items-center justify-center fill-[#8A8A8A] font-bold text-[#8A8A8A]"
+              >
+                <a
+                  id="logout"
+                  href="#logout"
+                  data-url="index.html"
+                  class="side-bar-options flex h-12 w-full items-center justify-center gap-4"
+                >
+                  <div class="flex h-12 w-32 items-center gap-4">
+                    <span
+                      ><svg
+                        class="h-5 w-5"
+                        version="1.1"
+                        id="Layer_1"
+                        xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink"
+                        x="0px"
+                        y="0px"
+                        viewBox="0 0 512.025 512.025"
+                        style="enable-background: new 0 0 512.025 512.025"
+                        xml:space="preserve"
+                      >
+                        <g>
+                          <g>
+                            <g>
+                              <path
+                                d="M177.646,179.831c-3.349-29.547-26.752-51.819-54.4-51.819H68.782c-27.648,0-51.051,22.272-54.4,51.819L0.238,303.735
+				c-1.173,10.368,2.027,20.651,8.768,28.224c5.803,6.528,13.547,10.304,21.909,10.773l11.776,159.403
+				c0.448,5.568,5.077,9.877,10.667,9.877h85.333c5.589,0,10.219-4.309,10.645-9.877l11.776-159.403
+				c8.384-0.469,16.107-4.267,21.909-10.773c6.741-7.552,9.941-17.856,8.768-28.224L177.646,179.831z"
+                              />
+                              <path
+                                d="M96.025,106.679c29.461,0,53.333-23.872,53.333-53.333c0-29.461-23.893-53.333-53.333-53.333
+				c-29.461,0-53.333,23.872-53.333,53.333C42.691,82.807,66.563,106.679,96.025,106.679z"
+                              />
+                              <path
+                                d="M354.564,20.471c4.651-1.984,7.253-6.997,6.251-11.947c-1.024-4.949-5.397-8.512-10.453-8.512H245.358
+				c-17.643,0-32,14.357-32,32v384c0,17.643,14.357,32,32,32h21.333c5.888,0,10.667-4.779,10.667-10.667V98.018
+				c0-26.987,16.043-51.307,40.853-61.952L354.564,20.471z"
+                              />
+                              <path
+                                d="M465.966,0.012c-6.293,0-12.395,1.259-18.176,3.733L326.595,55.692c-16.939,7.253-27.904,23.872-27.904,42.325v367.936
+				c0,25.387,20.672,46.059,46.059,46.059c6.293,0,12.395-1.259,18.176-3.733l121.195-51.947
+				c16.939-7.253,27.904-23.872,27.904-42.325V46.071C512.025,20.684,491.353,0.012,465.966,0.012z M362.691,288.012
+				c0,5.888-4.779,10.667-10.667,10.667c-5.888,0-10.667-4.779-10.667-10.667v-42.667c0-5.888,4.779-10.667,10.667-10.667
+				c5.888,0,10.667,4.779,10.667,10.667V288.012z"
+                              />
+                            </g>
+                          </g>
+                        </g></svg></span
+                    ><span>Logout</span>
+                  </div></a
+                >
+              </div>
+            </div>
+          </div>
+        </aside>
+        <!-- main-container -->
+        <main class="p-4" id="main-container-root">
+          <div
+            class="flex h-full w-full items-center justify-center rounded-xl border-2 border-[#e8e8e8] shadow-xl"
+          >
+            <span>Index</span>
+          </div>
+        </main>
+      </div>
+    </div>
+    <!-- javaScript -->
+    <script type="module" src="./js/script.js" defer></script>
+    <script type="module" src="./js/shop.js" defer></script>
+  </body>
+</html>

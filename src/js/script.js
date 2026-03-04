@@ -1,7 +1,6 @@
 const changePage = document.querySelectorAll(".side-bar-options");
 const mainSection = document.querySelector("#main-container-root");
 
-// 1. HANDLE CLICKS
 changePage.forEach((page) => {
   page.addEventListener("click", (event) => {
     // We pass 'event' here so loadContent can stop the browser navigation
